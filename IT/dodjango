@@ -1,0 +1,24 @@
+#!/usr/bin/bash
+
+yes | apt install apache2 apache2-dev mysql-server mysql-client hollywood apache2-utils libexpat1 ssl-cert libapache2-mod-wsgi-py3 python3-dev default-libmysqlclient-dev build-essential
+
+pip install --user django mysqlclient mod_wsgi mysql-connector-python
+
+#x=("CREATE USER 'mysql_user'@'localhost' IDENTIFIED BY 'password';" "CREATE DATABASE IF NOT EXISTS db_name CHARACTER SET = utf8;" "USE db_name;" "GRANT ALL PRIVILEGES ON db_name  TO 'mysql_user'@'localhost';")
+x=("a'b'" "3" "f;")
+
+for i in ${x[@]}
+do
+    echo "$i" #| mysql -u root 
+done
+
+
+
+
+
+#ufw allow 80/tcp CREATE USER 'username'@'localhost' IDENTIFIED BY 'password'; CREATE DATABASE IF NOT EXISTS db_name CHARACTER SET = utf8;  USE db_name; GRANT ALL PRIVILEGES ON db_name  TO 'mysql_user'@'localhost';
+
+
+
+
+
